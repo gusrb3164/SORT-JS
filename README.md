@@ -9,7 +9,7 @@ node main.js
 ## Sort List
 
 - Selection Sort
-- - Insertion Sort
+- Insertion Sort
 - Bubble Sort
 - Quick Sort
 - Shell Sort
