@@ -2,11 +2,15 @@ const InsertionSort = require('./InsertionSort').InsertionSort;
 const SelectionSort = require('./SelectionSort').SelectionSort;
 const BubbleSort = require('./BubbleSort').BubbleSort;
 const MergeSort = require('./MergeSort').MergeSort;
+const QuickSort = require('./QuickSort').QuickSort;
 
-const arr = [32, 21, 134, 33, 32, 1, 99, 32121, 5454, 237, 211, 33232, 5, 10, 21];
+const arr = [];
+for (let i = 0; i < 20; i++) {
+	arr.push(Math.floor(Math.random() * (100 - 0)));
+}
 
 // all sorts : (array, function compare(a,b)) => {}
-sortList = [InsertionSort, SelectionSort, BubbleSort, MergeSort];
+sortList = [InsertionSort, SelectionSort, BubbleSort, MergeSort, QuickSort];
 sortList.map((sort) => {
 	console.log(sort(arr, (a, b) => b - a));
 });
