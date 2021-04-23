@@ -7,12 +7,22 @@ const HeapSort = require('./HeapSort').HeapSort;
 const ShellSort = require('./ShellSort').ShellSort;
 
 const arr = [];
-for (let i = 0; i < 20; i++) {
+for (let i = 0; i < 10; i++) {
 	arr.push(Math.floor(Math.random() * (100 - 0)));
 }
 
 // all sorts : (array, function compare(a,b)) => {}
-sortList = [InsertionSort, SelectionSort, BubbleSort, MergeSort, QuickSort, HeapSort];
-sortList.map((sort) => {
-	console.log(sort(arr, (a, b) => a - b));
+sortName = [
+	'InsertionSort',
+	'SelectionSort',
+	'BubbleSort',
+	'MergeSort',
+	'QuickSort',
+	'HeapSort',
+	'ShellSort',
+];
+sortList = [InsertionSort, SelectionSort, BubbleSort, MergeSort, QuickSort, HeapSort, ShellSort];
+sortList.map((sort, idx) => {
+	console.log(`======${sortName[idx]}======`);
+	console.log(sort(arr, (a, b) => b - a));
 });
