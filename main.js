@@ -4,6 +4,7 @@ const BubbleSort = require('./BubbleSort').BubbleSort;
 const MergeSort = require('./MergeSort').MergeSort;
 const QuickSort = require('./QuickSort').QuickSort;
 const HeapSort = require('./HeapSort').HeapSort;
+const ShellSort = require('./ShellSort').ShellSort;
 
 const arr = [];
 for (let i = 0; i < 20; i++) {
