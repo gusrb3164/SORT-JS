@@ -1,5 +1,4 @@
 function HeapSort(arr, compare) {
-	console.log('HeapSort');
 	function Heapify(orderedNum) {
 		for (let i = parseInt((arr.length - orderedNum) / 2) - 1; i >= 0; i--) {
 			const parentIdx = i;
